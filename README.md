@@ -9,10 +9,10 @@ jquey-windows-combobox is provide combobox like microsoft windows for jQuery.
 clone or download zip.  
 show **sample.html** on your browser.
 
-### Image
+## Image
 ![sample_image](https://raw.githubusercontent.com/melt-snow/jquey-windows-combobox/master/sample.png)
 
-#### Common Setting 
+## Common Setting 
 
     <head>
         <link rel="stylesheet" href="jquery-windows-combobox.css">
@@ -23,7 +23,7 @@ show **sample.html** on your browser.
         <script src="jquery-windows-combobox.js"></script>
     </body>
 
-#### sample:default
+## sample:default
 
     <div class="combobox">
         <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
@@ -40,7 +40,7 @@ show **sample.html** on your browser.
         jQuery('.combobox').combobox();
     </script>
 
-#### sample:fix-font-size
+## sample:fix-font-size
 
     <style>
         /* if you want set font-size */
@@ -91,7 +91,7 @@ show **sample.html** on your browser.
         jQuery('.combobox').combobox();
     </script>
       
-#### sample:align-right
+## sample:align-right
 
     <style>
         /* if you want set align right */
@@ -116,7 +116,7 @@ show **sample.html** on your browser.
         jQuery('.combobox').combobox();
     </script>
 
-#### sample:multiple
+## sample:multiple
 
     <div class="combobox sample-multiple">
         <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
@@ -143,7 +143,7 @@ show **sample.html** on your browser.
         jQuery('.combobox').combobox();
     </script>
 
-#### sample:multiple float
+## sample:multiple float
 
     <style>
         /* if you want side-by-side */
