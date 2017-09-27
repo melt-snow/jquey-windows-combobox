@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jquery combobox sample</title>
+    <meta charset="utf-8">
+    <meta name="description" content="jquery combobox sample">
+    <meta name="author" content="H2O">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <!--[if lt IE 9]>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="">
+    <style>
+        /* if you want set font-size */
+        .sample-fix-font-size > input {
+            /* fix to select */
+            font-size: 50px;
+        }
+
+        /* if you want set input margin and padding */
+        .sample-fix-margin-padding > input {
+            /* fix to select */
+            margin: 5px 10px 15px 20px;
+            padding: 28px 21px 14px 7px;
+        }
+
+        /* if you want set align right */
+        .sample-align-right > input {
+            /* fix to input and select */
+            text-align: right;
+        }
+
+        /* if you want side-by-side */
+        .sample-multiple-float {
+            float: left;
+        }
+    </style>
+
+    <!-- v jquery-windows-combobox.css -->
+    <link rel="stylesheet" href="jquery-windows-combobox.css">
+    <!-- ^ jquery-windows-combobox.css -->
+</head>
+<body>
+<h2>sample:default</h2>
+<form>
+    <div class="combobox">
+        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
+        <select title="seiza">
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+        </select>
+    </div>
+</form>
+
+<h2>sample:fix-font-size</h2>
+<form>
+    <div class="combobox sample-fix-font-size">
+        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
+        <select title="seiza">
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+        </select>
+    </div>
+</form>
+
+<h2>sample:fix-margin-padding</h2>
+<form>
+    <div class="combobox sample-fix-margin-padding">
+        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
+        <select title="seiza">
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+        </select>
+    </div>
+</form>
+
+<h2>sample:align-right</h2>
+<form>
+    <div class="combobox sample-align-right">
+        <input type="text" name="test2" title="sample" size="20" placeholder="Please select sample">
+        <select title="sample">
+            <option value="sample1">sample1</option>
+            <option value="sample2">sample2</option>
+            <option value="sample3">sample3</option>
+            <option value="sample4">sample4</option>
+            <option value="sample5">sample5</option>
+        </select>
+    </div>
+</form>
+
+<h2>sample:multiple</h2>
+<form>
+    <div class="combobox sample-multiple">
+        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
+        <select title="seiza">
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+        </select>
+    </div>
+    <div class="combobox sample-multiple sample-align-right">
+        <input type="text" name="test2" title="sample" class="sample2" size="20" placeholder="Please select sample">
+        <select title="sample">
+            <option value="sample1">sample1</option>
+            <option value="sample2">sample2</option>
+            <option value="sample3">sample3</option>
+            <option value="sample4">sample4</option>
+            <option value="sample5">sample5</option>
+        </select>
+    </div>
+</form>
+
+<h2>sample:multiple float</h2>
+<form>
+    <div class="combobox sample-multiple-float  sample-align-right">
+        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
+        <select title="seiza">
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+        </select>
+    </div>
+    <div class="combobox sample-multiple-float">
+        <input type="text" name="test2" title="sample" size="20" placeholder="Please select sample">
+        <select title="sample">
+            <option value="sample1">sample1</option>
+            <option value="sample2">sample2</option>
+            <option value="sample3">sample3</option>
+            <option value="sample4">sample4</option>
+            <option value="sample5">sample5</option>
+        </select>
+    </div>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- v jquery-windows-combobox.js -->
+<script src="jquery-windows-combobox.js"></script>
+<!-- ^ jquery-windows-combobox.js -->
+
+<!-- v call sample -->
+<script>
+    jQuery('.combobox').combobox();
+</script>
+<!-- ^ call sample -->
+</body>
+</html>
