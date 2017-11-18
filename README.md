@@ -1,16 +1,16 @@
 # jquey-windows-combobox
-#### Current Version 1.0.0
+#### Current Version 1.1.0
 
 ## Welcome
 jquey-windows-combobox is provide combobox like microsoft windows for jQuery.
 
-
 ## How to use
 clone or download zip.  
-show **sample.html** on your browser.
+show **sample.html** and **sample_style.html** on your browser.
 
 ## Image
 ![sample_image](https://raw.githubusercontent.com/melt-snow/jquey-windows-combobox/master/sample.png)
+![sample_style_image](https://raw.githubusercontent.com/melt-snow/jquey-windows-combobox/master/sample_style.png)
 
 ## Common Setting 
 

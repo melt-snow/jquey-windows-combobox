@@ -13,20 +13,37 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="">
+    <style>
+        /* if you want set font-size */
+        .sample-fix-font-size > input {
+            /* fix to select */
+            font-size: 50px;
+        }
+
+        /* if you want set input margin and padding */
+        .sample-fix-margin-padding > input {
+            /* fix to select */
+            margin: 5px 10px 15px 20px;
+            padding: 28px 21px 14px 7px;
+        }
+
+        /* if you want set align right */
+        .sample-align-right > input {
+            /* fix to input and select */
+            text-align: right;
+        }
+
+        /* if you want side-by-side */
+        .sample-multiple-float {
+            float: left;
+        }
+    </style>
 
     <!-- v jquery-windows-combobox.css -->
     <link rel="stylesheet" href="jquery-windows-combobox.css">
     <!-- ^ jquery-windows-combobox.css -->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    <!-- v jquery-windows-combobox.js -->
-    <script src="jquery-windows-combobox.js"></script>
-    <!-- ^ jquery-windows-combobox.js -->
-
 </head>
 <body>
-
 <h2>sample:default</h2>
 <form>
     <div class="combobox">
@@ -49,18 +66,11 @@
     </div>
     <button type="submit" name="action" value="send">Send</button>
 </form>
-<!-- v call sample -->
-<script>
-    jQuery('.combobox_default').combobox();
-</script>
-<!-- ^ call sample -->
 
-
-<h2>sample:exists input full value</h2>
+<h2>sample:fix-font-size</h2>
 <form>
-    <div class="combobox_exists_full_value">
-        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" value="Cancer"
-               placeholder="Please select zodiac sign">
+    <div class="combobox sample-fix-font-size">
+        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
         <select title="seiza">
             <option value="1">Aries</option>
             <option value="2">Taurus</option>
@@ -78,18 +88,11 @@
     </div>
     <button type="submit" name="action" value="send">Send</button>
 </form>
-<!-- v call sample -->
-<script>
-    jQuery('.combobox_exists_full_value').combobox();
-</script>
-<!-- ^ call sample -->
 
-
-<h2>sample:exists input incomplete value</h2>
+<h2>sample:fix-margin-padding</h2>
 <form>
-    <div class="combobox_exists_incomplete_value">
-        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" value="Ca"
-               placeholder="Please select zodiac sign">
+    <div class="combobox sample-fix-margin-padding">
+        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
         <select title="seiza">
             <option value="1">Aries</option>
             <option value="2">Taurus</option>
@@ -107,18 +110,32 @@
     </div>
     <button type="submit" name="action" value="send">Send</button>
 </form>
-<!-- v call sample -->
-<script>
-    jQuery('.combobox_exists_incomplete_value').combobox();
-</script>
-<!-- ^ call sample -->
 
-
-<h2>sample:override exists input value</h2>
+<h2>sample:align-right</h2>
 <form>
-    <div class="combobox_override_exists_value">
-        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" value="Cancer"
-               placeholder="Please select zodiac sign">
+    <div class="combobox sample-align-right">
+        <input type="text" name="test2" title="sample" size="20" placeholder="Please select sample">
+        <select title="seiza">
+            <option value="A">sample1</option>
+            <option value="B">sample2</option>
+            <option value="C">sample3</option>
+            <option value="D">sample4</option>
+            <option value="E">sample5</option>
+            <option value="F">sample6</option>
+            <option value="G">sample7</option>
+            <option value="H">sample8</option>
+            <option value="I">sample9</option>
+            <option value="J">sample10</option>
+            <option value="K">sample11</option>
+        </select>
+    </div>
+    <button type="submit" name="action" value="send">Send</button>
+</form>
+
+<h2>sample:multiple</h2>
+<form>
+    <div class="combobox sample-multiple">
+        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
         <select title="seiza">
             <option value="1">Aries</option>
             <option value="2">Taurus</option>
@@ -134,59 +151,73 @@
             <option value="12">Pisces</option>
         </select>
     </div>
+    <div class="combobox sample-multiple sample-align-right">
+        <input type="text" name="test2" title="sample" class="sample2" size="20" placeholder="Please select sample">
+        <select title="sample">
+            <option value="A">sample1</option>
+            <option value="B">sample2</option>
+            <option value="C">sample3</option>
+            <option value="D">sample4</option>
+            <option value="E">sample5</option>
+            <option value="F">sample6</option>
+            <option value="G">sample7</option>
+            <option value="H">sample8</option>
+            <option value="I">sample9</option>
+            <option value="J">sample10</option>
+            <option value="K">sample11</option>
+        </select>
+    </div>
     <button type="submit" name="action" value="send">Send</button>
 </form>
-<!-- v call sample -->
-<script>
-    jQuery('.combobox_override_exists_value').combobox({init_data: 'Leo'});
-</script>
-<!-- ^ call sample -->
 
-<h2>sample:full setting with another inputs and select</h2>
+<h2>sample:multiple float</h2>
 <form>
-    <input type="text" name="anoter" value="" placeholder="Another input text">
+    <div class="combobox sample-multiple-float  sample-align-right">
+        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20" placeholder="Please select zodiac sign">
+        <select title="seiza">
+            <option value="1">Aries</option>
+            <option value="2">Taurus</option>
+            <option value="3">Gemini</option>
+            <option value="4">Cancer</option>
+            <option value="5">Leo</option>
+            <option value="6">Virgo</option>
+            <option value="7">Libra</option>
+            <option value="8">Scorpius</option>
+            <option value="9">Sagittarius</option>
+            <option value="10">Capriconus</option>
+            <option value="11">Aquarius</option>
+            <option value="12">Pisces</option>
+        </select>
+    </div>
+    <div class="combobox sample-multiple-float">
+        <input type="text" name="test2" title="sample" size="20" placeholder="Please select sample">
+        <select title="seiza">
+            <option value="A">sample1</option>
+            <option value="B">sample2</option>
+            <option value="C">sample3</option>
+            <option value="D">sample4</option>
+            <option value="E">sample5</option>
+            <option value="F">sample6</option>
+            <option value="G">sample7</option>
+            <option value="H">sample8</option>
+            <option value="I">sample9</option>
+            <option value="J">sample10</option>
+            <option value="K">sample11</option>
+        </select>
+    </div>
     <br>
-    <select title="another_select">
-        <option value='' disabled selected style='display:none; color: darkgray'>Another select</option>
-        <option value="1">another 1</option>
-        <option value="2">another 2</option>
-    </select>
-    <br>
-    <div class="combobox_full_setting">
-        <input type="text" name="zodiac_sign" title="zodiac_sign" size="20"
-               placeholder="Please select zodiac sign">
-        <select title="seiza">
-            <option value="1">Aries</option>
-            <option value="2">Taurus</option>
-            <option value="3">Gemini</option>
-            <option value="4">Cancer</option>
-            <option value="5">Leo</option>
-            <option value="6">Virgo</option>
-            <option value="7">Libra</option>
-            <option value="8">Scorpius</option>
-            <option value="9">Sagittarius</option>
-            <option value="10">Capriconus</option>
-            <option value="11">Aquarius</option>
-            <option value="12">Pisces</option>
-        </select>
-    </div>
     <button type="submit" name="action" value="send">Send</button>
 </form>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- v jquery-windows-combobox.js -->
+<script src="jquery-windows-combobox.js"></script>
+<!-- ^ jquery-windows-combobox.js -->
+
 <!-- v call sample -->
 <script>
-    jQuery('.combobox_full_setting').combobox(
-        {
-            "target_input": 'input[name="zodiac_sign"]',    //input tag selector
-            "target_select": 'select',  //select tag selector
-            'z_index': 9999,               //start z-index
-            'allow_magnify_input': false,  //if true expand input size
-//            'send_value': false,           //if true use send options value
-            'match_color': '#ddf',         //matched options background-color
-            'init_data': 'Virgo',         //overdrive input value/* or value(if send_value true)*/
-            //it's a magic number...
-            'select_arrow_width': 20       //select arrow width
-        }
-    );
+    jQuery('.combobox').combobox();
 </script>
 <!-- ^ call sample -->
 
